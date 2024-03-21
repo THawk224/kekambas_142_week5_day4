@@ -44,7 +44,7 @@ $$;
 CALL insert_film('Hazy Down', 'A man on a quest to get high', '2020', '1', '7', '4.99', '150', '14.99', 'R' );
 
 SELECT *
-FROM film WHERE title = 'Hazy Down';
+FROM film WHERE title = 'Hazy Down'; -- Answer: It works, IF run it will SHOW the entire information displayed above
 
 DELETE FROM film WHERE film_id = 1002; -- DELETE entries FROM queries IF there ARE MORE than one OF the same entry
 
@@ -66,9 +66,9 @@ BEGIN
 END;
 $$;
 
-SELECT num_films_category(11);
-SELECT num_films_category(14);
-SELECT num_films_category(7);
+SELECT num_films_category(11); -- Answer: 56 films
+SELECT num_films_category(14); -- Answer:61 films
+SELECT num_films_category(7); -- Answer: 62 films
 
 SELECT *
 FROM category;
